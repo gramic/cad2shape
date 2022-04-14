@@ -47,9 +47,9 @@ ShapefileImoti::ShapefileImoti(string nameShapeFileValue,
 		{ "VAVOD", OGRFieldType(OFTString), 1, "tableAttributesPOZEMLIMOTI" }, //structField VAVOD;		//B	1	0			флаг за въвод във владение
 		{ "BEG_DATE", OGRFieldType(OFTString), 10, "tableAttributesPOZEMLIMOTI" }, //structField BEG_DATE;	//D	10	0			Дата на регистрация
 		{ "END_DATE", OGRFieldType(OFTString), 10, "tableAttributesPOZEMLIMOTI" }, //structField END_DATE;	//D	10	0			Дата на отрегистрация};
-		{ "VIDS_txt", OGRFieldType(OFTString), 30, "tableNomenclaturеsVIDS" }, // key VIDS;
-		{ "VIDT_txt", OGRFieldType(OFTString), 30, "tableNomenclaturеsVIDT" }, // key VIDT;
-		{ "NTP_txt", OGRFieldType(OFTString), 30, "tableNomenclaturеsNTP" }, // key NTP;
+		{ "VIDS_txt", OGRFieldType(OFTString), 30, "tableNomenclaturesVIDS" }, // key VIDS;
+		{ "VIDT_txt", OGRFieldType(OFTString), 30, "tableNomenclaturesVIDT" }, // key VIDT;
+		{ "NTP_txt", OGRFieldType(OFTString), 30, "tableNomenclaturesNTP" }, // key NTP;
 		{ "MESTN_txt", OGRFieldType(OFTString), 30, "tableAttributesMESTNOSTI" } // key MESTNOST;
 	};
 }
@@ -233,21 +233,21 @@ void ShapefileImoti::createShapefileIMOTI()
 			else if (f.name == "VIDS_txt")
 			{
 				structNomTABLEVIDS t;
-				t = nomTables.tableNomenclaturеsVIDS[datarowPOZEMLIMOTI.VIDS];
+				t = nomTables.tableNomenclaturesVIDS[datarowPOZEMLIMOTI.VIDS];
 				const char * ch = t.VIDS_txt.c_str();
 				poFeature->SetField(n, ch);
 			}
 			else if (f.name == "VIDT_txt")
 			{
 				structNomTABLEVIDT t;
-				t = nomTables.tableNomenclaturеsVIDT[datarowPOZEMLIMOTI.VIDT];
+				t = nomTables.tableNomenclaturesVIDT[datarowPOZEMLIMOTI.VIDT];
 				const char * ch = t.VIDT_txt.c_str();
 				poFeature->SetField(n, ch);
 			}
 			else if (f.name == "NTP_txt")
 			{
 				structNomTABLENTP t;
-				t = nomTables.tableNomenclaturеsNTP[datarowPOZEMLIMOTI.NTP];
+				t = nomTables.tableNomenclaturesNTP[datarowPOZEMLIMOTI.NTP];
 				const char * ch = t.NTP_txt.c_str();
 				poFeature->SetField(n, ch);
 			}

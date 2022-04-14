@@ -177,7 +177,7 @@ void ShapefileNadpisi::createShapefile()
 			else if (f.name == "TYPE_txt")
 			{
 				structNomTABLENADPISI s;
-				s = nomTables.tableNomenclaturåsNADPISI[t.type];
+				s = nomTables.tableNomenclaturesNADPISI[t.type];
 				const char * ch = s.TYPE_txt.c_str();
 				poFeature->SetField(n, ch);
 			}

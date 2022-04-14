@@ -1,4 +1,5 @@
 ﻿#include "stdafx.h"
+#include <algorithm>  
 #include <iostream>  
 #include <fstream>  
 #include <string>
@@ -24,7 +25,7 @@
 #include "helper.h"
 #include "helper_template.cpp"
 #include <boost/filesystem.hpp>
-#include <Windows.h>
+// #include <Windows.h>
 
 
 using namespace boost::filesystem;
@@ -34,8 +35,8 @@ using namespace std;
 int main (int argc, char* argv[])
 {
 	auto start = std::chrono::high_resolution_clock::now();
-	SetConsoleCP(1251);// установка кодовой страницы win-cp 1251 в поток ввода
-	SetConsoleOutputCP(1251); // установка кодовой страницы win-cp 1251 в поток вывода
+	// SetConsoleCP(1251);// установка кодовой страницы win-cp 1251 в поток ввода
+	// SetConsoleOutputCP(1251); // установка кодовой страницы win-cp 1251 в поток вывода
 
 
 	cout << "Copyright(c) 2019 Asen Asenov" << '\n';
@@ -48,7 +49,7 @@ int main (int argc, char* argv[])
 	cout << "IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN" << '\n';
 	cout << "CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE." << '\n' << '\n';
 
-	Sleep(2000);
+	// Sleep(2000);
 	
 	string dirName = argv[1];
 	if (dirName == "")

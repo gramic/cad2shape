@@ -40,15 +40,15 @@ struct structConturAttr
 
 struct structNadpisiAtrr
 {
-	int type; // тип на текста по класификатора в приложение № 1;   featureBufferT.set_Value(T_TypeKlasificator, System.Convert.ToInt16(splitstringspace[1]));
-	string code; //  е уникален номер на текста;   featureBufferT.set_Value(T_CodeText, System.Convert.ToInt32(splitstringspace[2]));
-	double pointX; // са координати на текста;   double pointTextX = System.Convert.ToDouble(splitstringspace[4]) + referenceY;
-	double pointY; // са координати на текста;   double pointTextY = System.Convert.ToDouble(splitstringspace[3]) + referenceX;
-	int sizeFont; //  височина на надписа в милиметри на хартията  //featureBufferT.set_Value(T_SizeFont, System.Convert.ToInt32(splitstringspace[5]));
-	string begDate; //  е дата на легалната поява на обекта във форма  //featureBufferT.set_Value(T_CreateDate, splitstringspace[6]);
-	string endDate; //  е дата на преустановяване на легалното съществуване обекта  //featureBufferT.set_Value(T_EndDate, splitstringspace[7]);
-	double rotAngle; //  е ъгъл на завъртане на текста(100 гона за хоризонтален)  //featureBufferT.set_Value(T_RotAngle, System.Convert.ToDouble(splitstringspace[8]));
-	string alignment;// двубуквен код за подравняване   //featureBufferT.set_Value(T_Alignment, splitstringspace[9]);
+	int type; // С‚РёРї РЅР° С‚РµРєСЃС‚Р° РїРѕ РєР»Р°СЃРёС„РёРєР°С‚РѕСЂР° РІ РїСЂРёР»РѕР¶РµРЅРёРµ в„– 1;   featureBufferT.set_Value(T_TypeKlasificator, System.Convert.ToInt16(splitstringspace[1]));
+	string code; //  Рµ СѓРЅРёРєР°Р»РµРЅ РЅРѕРјРµСЂ РЅР° С‚РµРєСЃС‚Р°;   featureBufferT.set_Value(T_CodeText, System.Convert.ToInt32(splitstringspace[2]));
+	double pointX; // СЃР° РєРѕРѕСЂРґРёРЅР°С‚Рё РЅР° С‚РµРєСЃС‚Р°;   double pointTextX = System.Convert.ToDouble(splitstringspace[4]) + referenceY;
+	double pointY; // СЃР° РєРѕРѕСЂРґРёРЅР°С‚Рё РЅР° С‚РµРєСЃС‚Р°;   double pointTextY = System.Convert.ToDouble(splitstringspace[3]) + referenceX;
+	int sizeFont; //  РІРёСЃРѕС‡РёРЅР° РЅР° РЅР°РґРїРёСЃР° РІ РјРёР»РёРјРµС‚СЂРё РЅР° С…Р°СЂС‚РёСЏС‚Р°  //featureBufferT.set_Value(T_SizeFont, System.Convert.ToInt32(splitstringspace[5]));
+	string begDate; //  Рµ РґР°С‚Р° РЅР° Р»РµРіР°Р»РЅР°С‚Р° РїРѕСЏРІР° РЅР° РѕР±РµРєС‚Р° РІСЉРІ С„РѕСЂРјР°  //featureBufferT.set_Value(T_CreateDate, splitstringspace[6]);
+	string endDate; //  Рµ РґР°С‚Р° РЅР° РїСЂРµСѓСЃС‚Р°РЅРѕРІСЏРІР°РЅРµ РЅР° Р»РµРіР°Р»РЅРѕС‚Рѕ СЃСЉС‰РµСЃС‚РІСѓРІР°РЅРµ РѕР±РµРєС‚Р°  //featureBufferT.set_Value(T_EndDate, splitstringspace[7]);
+	double rotAngle; //  Рµ СЉРіСЉР» РЅР° Р·Р°РІСЉСЂС‚Р°РЅРµ РЅР° С‚РµРєСЃС‚Р°(100 РіРѕРЅР° Р·Р° С…РѕСЂРёР·РѕРЅС‚Р°Р»РµРЅ)  //featureBufferT.set_Value(T_RotAngle, System.Convert.ToDouble(splitstringspace[8]));
+	string alignment;// РґРІСѓР±СѓРєРІРµРЅ РєРѕРґ Р·Р° РїРѕРґСЂР°РІРЅСЏРІР°РЅРµ   //featureBufferT.set_Value(T_Alignment, splitstringspace[9]);
 	string textNadpis;
 };
 
@@ -76,7 +76,7 @@ struct structField
 	string name;
 	OGRFieldType ogrType;
 	int lentgh;
-	int flag; //1 - key, 2 -  поле за връзка с класификатор, идентичен с името на полето name, 3 - поле за връзка с таблица и име на поле name за вход в нея
+	int flag; //1 - key, 2 -  РїРѕР»Рµ Р·Р° РІСЂСЉР·РєР° СЃ РєР»Р°СЃРёС„РёРєР°С‚РѕСЂ, РёРґРµРЅС‚РёС‡РµРЅ СЃ РёРјРµС‚Рѕ РЅР° РїРѕР»РµС‚Рѕ name, 3 - РїРѕР»Рµ Р·Р° РІСЂСЉР·РєР° СЃ С‚Р°Р±Р»РёС†Р° Рё РёРјРµ РЅР° РїРѕР»Рµ name Р·Р° РІС…РѕРґ РІ РЅРµСЏ
 	string relTable; // name relation table, "name" is the key in this table
 };
 
@@ -93,126 +93,126 @@ struct structFieldShape
 
 struct structDataPOZEMLIMOTI
 {
-////F name	type	Len	dec	flag	table	Име на полето
-	string IDENT;	//C	20	0	1		Идентификатор на имот
-	int VIDT;		//S	1	0	2		Вид територия
-	int VIDTOLD;		//S	1	0	2		Вид територия(стара номенклатура)
-	int VIDS;		//S	2	0	2		Вид собственост
-	int NTP;		//S	4	0	2		Начин на трайно ползване
-	int NTPOLD;		//S	4	0	2		Начин на трайно ползване(стара номенклатура)
-	int MESTNOST;	//S	4	0	3	MESTNOSTI	Код на местност
-	string PARTIDA;	//C	20	0			Номер на партида от ИР
-	int ADDRCODE;	//L	10	0	3	ADDRESS	Адрес на имота
-	string NOMER1;	//C	10	0			Стар планоснимачен номер
-	string KVARTAL;	//C	10	0			Номер на квартал от регулационен план
-	string PARCEL; 	//C	10	0			Номер на парцел  от регулационен план с римски цифри
-	double GODCAD;	//N	4	0			Година на стария кадастрален план
-	double GODREG;	//N	4	0			Година на стария регулационен план
-	int CODZAP;		//S	4	0	3	ZAPOVEDI	Код на последната заповед за одобряване
-	int ZACON;		//S	2	0	2		Код на закон, по който са установени границите
-	int KAT;			//S	2	0			Преобладаваща категория на земята
-	int NVAST;		//S	1	0	2		Начин на възстановяване - от класификатора за начините на възстановяване
-	int VAVOD;		//B	1	0			флаг за въвод във владение
-	string BEG_DATE;	//D	10	0			Дата на регистрация
-	string END_DATE;	//D	10	0			Дата на отрегистрация
+////F name	type	Len	dec	flag	table	РРјРµ РЅР° РїРѕР»РµС‚Рѕ
+	string IDENT;	//C	20	0	1		РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РЅР° РёРјРѕС‚
+	int VIDT;		//S	1	0	2		Р’РёРґ С‚РµСЂРёС‚РѕСЂРёСЏ
+	int VIDTOLD;		//S	1	0	2		Р’РёРґ С‚РµСЂРёС‚РѕСЂРёСЏ(СЃС‚Р°СЂР° РЅРѕРјРµРЅРєР»Р°С‚СѓСЂР°)
+	int VIDS;		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚
+	int NTP;		//S	4	0	2		РќР°С‡РёРЅ РЅР° С‚СЂР°Р№РЅРѕ РїРѕР»Р·РІР°РЅРµ
+	int NTPOLD;		//S	4	0	2		РќР°С‡РёРЅ РЅР° С‚СЂР°Р№РЅРѕ РїРѕР»Р·РІР°РЅРµ(СЃС‚Р°СЂР° РЅРѕРјРµРЅРєР»Р°С‚СѓСЂР°)
+	int MESTNOST;	//S	4	0	3	MESTNOSTI	РљРѕРґ РЅР° РјРµСЃС‚РЅРѕСЃС‚
+	string PARTIDA;	//C	20	0			РќРѕРјРµСЂ РЅР° РїР°СЂС‚РёРґР° РѕС‚ РР 
+	int ADDRCODE;	//L	10	0	3	ADDRESS	РђРґСЂРµСЃ РЅР° РёРјРѕС‚Р°
+	string NOMER1;	//C	10	0			РЎС‚Р°СЂ РїР»Р°РЅРѕСЃРЅРёРјР°С‡РµРЅ РЅРѕРјРµСЂ
+	string KVARTAL;	//C	10	0			РќРѕРјРµСЂ РЅР° РєРІР°СЂС‚Р°Р» РѕС‚ СЂРµРіСѓР»Р°С†РёРѕРЅРµРЅ РїР»Р°РЅ
+	string PARCEL; 	//C	10	0			РќРѕРјРµСЂ РЅР° РїР°СЂС†РµР»  РѕС‚ СЂРµРіСѓР»Р°С†РёРѕРЅРµРЅ РїР»Р°РЅ СЃ СЂРёРјСЃРєРё С†РёС„СЂРё
+	double GODCAD;	//N	4	0			Р“РѕРґРёРЅР° РЅР° СЃС‚Р°СЂРёСЏ РєР°РґР°СЃС‚СЂР°Р»РµРЅ РїР»Р°РЅ
+	double GODREG;	//N	4	0			Р“РѕРґРёРЅР° РЅР° СЃС‚Р°СЂРёСЏ СЂРµРіСѓР»Р°С†РёРѕРЅРµРЅ РїР»Р°РЅ
+	int CODZAP;		//S	4	0	3	ZAPOVEDI	РљРѕРґ РЅР° РїРѕСЃР»РµРґРЅР°С‚Р° Р·Р°РїРѕРІРµРґ Р·Р° РѕРґРѕР±СЂСЏРІР°РЅРµ
+	int ZACON;		//S	2	0	2		РљРѕРґ РЅР° Р·Р°РєРѕРЅ, РїРѕ РєРѕР№С‚Рѕ СЃР° СѓСЃС‚Р°РЅРѕРІРµРЅРё РіСЂР°РЅРёС†РёС‚Рµ
+	int KAT;			//S	2	0			РџСЂРµРѕР±Р»Р°РґР°РІР°С‰Р° РєР°С‚РµРіРѕСЂРёСЏ РЅР° Р·РµРјСЏС‚Р°
+	int NVAST;		//S	1	0	2		РќР°С‡РёРЅ РЅР° РІСЉР·СЃС‚Р°РЅРѕРІСЏРІР°РЅРµ - РѕС‚ РєР»Р°СЃРёС„РёРєР°С‚РѕСЂР° Р·Р° РЅР°С‡РёРЅРёС‚Рµ РЅР° РІСЉР·СЃС‚Р°РЅРѕРІСЏРІР°РЅРµ
+	int VAVOD;		//B	1	0			С„Р»Р°Рі Р·Р° РІСЉРІРѕРґ РІСЉРІ РІР»Р°РґРµРЅРёРµ
+	string BEG_DATE;	//D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+	string END_DATE;	//D	10	0			Р”Р°С‚Р° РЅР° РѕС‚СЂРµРіРёСЃС‚СЂР°С†РёСЏ
 };
 
 struct structDataSGRADI
 {
-	////F name	type	Len	dec	flag	table	Име на полето
-	string IDENT;	//C	20	0	1		Идентификатор на сграда
-	int VIDS;		//S	2	0	2		Вид собственост
-	int CONST;		//S	2	0	2		Конструкция на сградата
-	int VFUNC;		//S	3	0	2		Функционално предназначение на сградата
-	int VFUNCOLD;	//S	3	0	2		Функционално предназначение на сградата –(стара номенклатура)
-	int GOD;		//S	4	0			Година на построяване на сградата
-	string PARTIDA;	//C	20	0			Номер на партида от ИР
-	string NOMER1;	//C	10	0			Стар планоснимачен номер
-	int ЕТ;			//S	3	0			Брой етажи на сградата
-	int ЕТ1;		//S	3	0			Брой допълнителни етажи
-	int BRPOM;		//S	3	0			Брой самостоятелни обекти
-	int ADDRCODE;	//L	10	0	3	ADDRESS	Адрес – код
-	int LEGAL;		//S	1	0			Флаг за законност : 0 - няма данни,	1 - незаконна, 2 – законна
-	string LEGALDOC;//C	20	0			Описание на документите за законност
-	string BEG_DATE;//D	10	0			Дата на регистрация
-	string END_DATE;//D	10	0			Дата на отрегистрация
+	////F name	type	Len	dec	flag	table	РРјРµ РЅР° РїРѕР»РµС‚Рѕ
+	string IDENT;	//C	20	0	1		РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РЅР° СЃРіСЂР°РґР°
+	int VIDS;		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚
+	int CONST;		//S	2	0	2		РљРѕРЅСЃС‚СЂСѓРєС†РёСЏ РЅР° СЃРіСЂР°РґР°С‚Р°
+	int VFUNC;		//S	3	0	2		Р¤СѓРЅРєС†РёРѕРЅР°Р»РЅРѕ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅРёРµ РЅР° СЃРіСЂР°РґР°С‚Р°
+	int VFUNCOLD;	//S	3	0	2		Р¤СѓРЅРєС†РёРѕРЅР°Р»РЅРѕ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅРёРµ РЅР° СЃРіСЂР°РґР°С‚Р° вЂ“(СЃС‚Р°СЂР° РЅРѕРјРµРЅРєР»Р°С‚СѓСЂР°)
+	int GOD;		//S	4	0			Р“РѕРґРёРЅР° РЅР° РїРѕСЃС‚СЂРѕСЏРІР°РЅРµ РЅР° СЃРіСЂР°РґР°С‚Р°
+	string PARTIDA;	//C	20	0			РќРѕРјРµСЂ РЅР° РїР°СЂС‚РёРґР° РѕС‚ РР 
+	string NOMER1;	//C	10	0			РЎС‚Р°СЂ РїР»Р°РЅРѕСЃРЅРёРјР°С‡РµРЅ РЅРѕРјРµСЂ
+	int Р•Рў;			//S	3	0			Р‘СЂРѕР№ РµС‚Р°Р¶Рё РЅР° СЃРіСЂР°РґР°С‚Р°
+	int Р•Рў1;		//S	3	0			Р‘СЂРѕР№ РґРѕРїСЉР»РЅРёС‚РµР»РЅРё РµС‚Р°Р¶Рё
+	int BRPOM;		//S	3	0			Р‘СЂРѕР№ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»РЅРё РѕР±РµРєС‚Рё
+	int ADDRCODE;	//L	10	0	3	ADDRESS	РђРґСЂРµСЃ вЂ“ РєРѕРґ
+	int LEGAL;		//S	1	0			Р¤Р»Р°Рі Р·Р° Р·Р°РєРѕРЅРЅРѕСЃС‚ : 0 - РЅСЏРјР° РґР°РЅРЅРё,	1 - РЅРµР·Р°РєРѕРЅРЅР°, 2 вЂ“ Р·Р°РєРѕРЅРЅР°
+	string LEGALDOC;//C	20	0			РћРїРёСЃР°РЅРёРµ РЅР° РґРѕРєСѓРјРµРЅС‚РёС‚Рµ Р·Р° Р·Р°РєРѕРЅРЅРѕСЃС‚
+	string BEG_DATE;//D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+	string END_DATE;//D	10	0			Р”Р°С‚Р° РЅР° РѕС‚СЂРµРіРёСЃС‚СЂР°С†РёСЏ
 };
 
 struct structDataPRAVA
 {
-	////F name	type	Len	dec	flag	table	Име на полето
-	string IDENT;	//C	20	0	1		Идентификатор на поземлен имот, сграда или самостоятелен обект в сграда
-	int VIDS;		//S	2	0	2		Вид собственост
-	string PERSON;	//C	13	0	3	PERSONS	ЕГН / Булстат на носителя на правото
-	int DOCCOD;		//L	10	0	3	DOCS	Код на документ
-	int DOCID1;	    //S	3	0			Идеална част : стойност на числителя, -1 при проценти, -2 при площ в кв.м.
-	double DOCID2;	//N	8	3			Идеална част : знаменател, число на процента или площта в кв.м.площ(в зависимост от DOCID1)
-	double PLDOC;	//N	11	3			Площ по документ
-	int PTYPE;		//S	2	0	2		Начин на придобиване
-	int PRAVOVID;	//S	2	0	2		Код на вида право
-	string SROK;	//D	10	0			Крайна дата на правото когато правото е срочно
-	string DOCIDENT;	//C	30	0			Номер на обекта по документ - свободен текст, например квартал и парцел, пл.сним.номер и т.н.
-	int DOP;		//B	1	0			Флаг за допълнителнителен документ(собственост); Т – допълнително, F – основен документ
-	string BEG_DATE;	//D	10	0			Дата на регистрация на правото
-	string END_DATE;	//D	10	0			Дата на прекратяване на правото
-	string END_TIME;	//T	5	0			Време(момент) на прекратяване на правото
+	////F name	type	Len	dec	flag	table	РРјРµ РЅР° РїРѕР»РµС‚Рѕ
+	string IDENT;	//C	20	0	1		РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РЅР° РїРѕР·РµРјР»РµРЅ РёРјРѕС‚, СЃРіСЂР°РґР° РёР»Рё СЃР°РјРѕСЃС‚РѕСЏС‚РµР»РµРЅ РѕР±РµРєС‚ РІ СЃРіСЂР°РґР°
+	int VIDS;		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚
+	string PERSON;	//C	13	0	3	PERSONS	Р•Р“Рќ / Р‘СѓР»СЃС‚Р°С‚ РЅР° РЅРѕСЃРёС‚РµР»СЏ РЅР° РїСЂР°РІРѕС‚Рѕ
+	int DOCCOD;		//L	10	0	3	DOCS	РљРѕРґ РЅР° РґРѕРєСѓРјРµРЅС‚
+	int DOCID1;	    //S	3	0			РРґРµР°Р»РЅР° С‡Р°СЃС‚ : СЃС‚РѕР№РЅРѕСЃС‚ РЅР° С‡РёСЃР»РёС‚РµР»СЏ, -1 РїСЂРё РїСЂРѕС†РµРЅС‚Рё, -2 РїСЂРё РїР»РѕС‰ РІ РєРІ.Рј.
+	double DOCID2;	//N	8	3			РРґРµР°Р»РЅР° С‡Р°СЃС‚ : Р·РЅР°РјРµРЅР°С‚РµР», С‡РёСЃР»Рѕ РЅР° РїСЂРѕС†РµРЅС‚Р° РёР»Рё РїР»РѕС‰С‚Р° РІ РєРІ.Рј.РїР»РѕС‰(РІ Р·Р°РІРёСЃРёРјРѕСЃС‚ РѕС‚ DOCID1)
+	double PLDOC;	//N	11	3			РџР»РѕС‰ РїРѕ РґРѕРєСѓРјРµРЅС‚
+	int PTYPE;		//S	2	0	2		РќР°С‡РёРЅ РЅР° РїСЂРёРґРѕР±РёРІР°РЅРµ
+	int PRAVOVID;	//S	2	0	2		РљРѕРґ РЅР° РІРёРґР° РїСЂР°РІРѕ
+	string SROK;	//D	10	0			РљСЂР°Р№РЅР° РґР°С‚Р° РЅР° РїСЂР°РІРѕС‚Рѕ РєРѕРіР°С‚Рѕ РїСЂР°РІРѕС‚Рѕ Рµ СЃСЂРѕС‡РЅРѕ
+	string DOCIDENT;	//C	30	0			РќРѕРјРµСЂ РЅР° РѕР±РµРєС‚Р° РїРѕ РґРѕРєСѓРјРµРЅС‚ - СЃРІРѕР±РѕРґРµРЅ С‚РµРєСЃС‚, РЅР°РїСЂРёРјРµСЂ РєРІР°СЂС‚Р°Р» Рё РїР°СЂС†РµР», РїР».СЃРЅРёРј.РЅРѕРјРµСЂ Рё С‚.РЅ.
+	int DOP;		//B	1	0			Р¤Р»Р°Рі Р·Р° РґРѕРїСЉР»РЅРёС‚РµР»РЅРёС‚РµР»РµРЅ РґРѕРєСѓРјРµРЅС‚(СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚); Рў вЂ“ РґРѕРїСЉР»РЅРёС‚РµР»РЅРѕ, F вЂ“ РѕСЃРЅРѕРІРµРЅ РґРѕРєСѓРјРµРЅС‚
+	string BEG_DATE;	//D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ РЅР° РїСЂР°РІРѕС‚Рѕ
+	string END_DATE;	//D	10	0			Р”Р°С‚Р° РЅР° РїСЂРµРєСЂР°С‚СЏРІР°РЅРµ РЅР° РїСЂР°РІРѕС‚Рѕ
+	string END_TIME;	//T	5	0			Р’СЂРµРјРµ(РјРѕРјРµРЅС‚) РЅР° РїСЂРµРєСЂР°С‚СЏРІР°РЅРµ РЅР° РїСЂР°РІРѕС‚Рѕ
 };
 
 struct structDataPERSONS
 {
-	////F name	type	Len	dec	flag	table	Име на полето
-	string PERSON;	// C	13	0	1		ЕГН / БУЛСТАТ на соб¬стве¬ник(не се въвежда буква в кода по БУЛСТАТ)
-	int SUBTYPE;	// S	1	0	2		Вид на субекта, код от номенклатура
-	string NAME;	// C	45	0			Име на собственик
-	string NSTATE;	// C	2	0	2		Адрес на собственика - буквен код на страна
-	int ADDRCODE;	// L	10	0	3	ADDRESS	Адрес на собственика - код на адрес
-	string ADDR;	// C	50	0			Пълен адрес на собственика - коментар
-	string ADDRET;	// C	4	0			Адрес на собственика – етаж
-	string ADDRAP;	// C	4	0			Адрес на собственика – апартамент
-	int FLAG;	    // B	1	0			Флаг за починал собственик
-	string SPERSON;	// C	10	0			ЕГН на свързано лице(съпруг / съпруга или физическо лице за ЕТ)
-	string FIRMREG;	// C	50	0			Данни за съдебна регистрация на фирма
-	string BEG_DATE;// D	10	0			Дата на регистрация
-	string END_DATE;// D	10	0			Дата на отрегистрация
+	////F name	type	Len	dec	flag	table	РРјРµ РЅР° РїРѕР»РµС‚Рѕ
+	string PERSON;	// C	13	0	1		Р•Р“Рќ / Р‘РЈР›РЎРўРђРў РЅР° СЃРѕР±В¬СЃС‚РІРµВ¬РЅРёРє(РЅРµ СЃРµ РІСЉРІРµР¶РґР° Р±СѓРєРІР° РІ РєРѕРґР° РїРѕ Р‘РЈР›РЎРўРђРў)
+	int SUBTYPE;	// S	1	0	2		Р’РёРґ РЅР° СЃСѓР±РµРєС‚Р°, РєРѕРґ РѕС‚ РЅРѕРјРµРЅРєР»Р°С‚СѓСЂР°
+	string NAME;	// C	45	0			РРјРµ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРє
+	string NSTATE;	// C	2	0	2		РђРґСЂРµСЃ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРєР° - Р±СѓРєРІРµРЅ РєРѕРґ РЅР° СЃС‚СЂР°РЅР°
+	int ADDRCODE;	// L	10	0	3	ADDRESS	РђРґСЂРµСЃ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРєР° - РєРѕРґ РЅР° Р°РґСЂРµСЃ
+	string ADDR;	// C	50	0			РџСЉР»РµРЅ Р°РґСЂРµСЃ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРєР° - РєРѕРјРµРЅС‚Р°СЂ
+	string ADDRET;	// C	4	0			РђРґСЂРµСЃ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРєР° вЂ“ РµС‚Р°Р¶
+	string ADDRAP;	// C	4	0			РђРґСЂРµСЃ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРєР° вЂ“ Р°РїР°СЂС‚Р°РјРµРЅС‚
+	int FLAG;	    // B	1	0			Р¤Р»Р°Рі Р·Р° РїРѕС‡РёРЅР°Р» СЃРѕР±СЃС‚РІРµРЅРёРє
+	string SPERSON;	// C	10	0			Р•Р“Рќ РЅР° СЃРІСЉСЂР·Р°РЅРѕ Р»РёС†Рµ(СЃСЉРїСЂСѓРі / СЃСЉРїСЂСѓРіР° РёР»Рё С„РёР·РёС‡РµСЃРєРѕ Р»РёС†Рµ Р·Р° Р•Рў)
+	string FIRMREG;	// C	50	0			Р”Р°РЅРЅРё Р·Р° СЃСЉРґРµР±РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ РЅР° С„РёСЂРјР°
+	string BEG_DATE;// D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+	string END_DATE;// D	10	0			Р”Р°С‚Р° РЅР° РѕС‚СЂРµРіРёСЃС‚СЂР°С†РёСЏ
 };
 
 struct structDataAPARTS
 {
-	////F name	type	Len	dec	flag	table	Име на полето
-	string IDENT;   //	C	20	0	1		Идентификатор на самостоятелен обект
-	string REM;	    //  C	20	0			Описание на обекта
-	int PREDN;	    //  S	3	0	2		Предназначение на самостоятелен обект
-	int VIDS;	    //  S	2	0	2		Вид собственост
-	string PARTIDA;	//  C	20	0			Номер на партида от ИР
-	int ADDRCODE;	//  L	10	0	3	ADDRESS	Адрес – код
-	string ADDRET;	//  C	4	0			Адрес – етаж
-	string ADDRAP;  //	C	4	0			Адрес – апартамент
-	double PLDOC;	//  N	11	3			Площ по документ
-	int BRET;	    //  S	2	0			Брой етажи на обекта
-	string DOPS;	//  C	80	0			Вид и площ на прилежащите помещения и общите части, които са неразделна част от обекта(свободен текст)
-	string BEG_DATE;//  D	10	0			Дата на регистрация
-	string END_DATE;//  D	10	0			Дата на отрегистрация
+	////F name	type	Len	dec	flag	table	РРјРµ РЅР° РїРѕР»РµС‚Рѕ
+	string IDENT;   //	C	20	0	1		РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РЅР° СЃР°РјРѕСЃС‚РѕСЏС‚РµР»РµРЅ РѕР±РµРєС‚
+	string REM;	    //  C	20	0			РћРїРёСЃР°РЅРёРµ РЅР° РѕР±РµРєС‚Р°
+	int PREDN;	    //  S	3	0	2		РџСЂРµРґРЅР°Р·РЅР°С‡РµРЅРёРµ РЅР° СЃР°РјРѕСЃС‚РѕСЏС‚РµР»РµРЅ РѕР±РµРєС‚
+	int VIDS;	    //  S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚
+	string PARTIDA;	//  C	20	0			РќРѕРјРµСЂ РЅР° РїР°СЂС‚РёРґР° РѕС‚ РР 
+	int ADDRCODE;	//  L	10	0	3	ADDRESS	РђРґСЂРµСЃ вЂ“ РєРѕРґ
+	string ADDRET;	//  C	4	0			РђРґСЂРµСЃ вЂ“ РµС‚Р°Р¶
+	string ADDRAP;  //	C	4	0			РђРґСЂРµСЃ вЂ“ Р°РїР°СЂС‚Р°РјРµРЅС‚
+	double PLDOC;	//  N	11	3			РџР»РѕС‰ РїРѕ РґРѕРєСѓРјРµРЅС‚
+	int BRET;	    //  S	2	0			Р‘СЂРѕР№ РµС‚Р°Р¶Рё РЅР° РѕР±РµРєС‚Р°
+	string DOPS;	//  C	80	0			Р’РёРґ Рё РїР»РѕС‰ РЅР° РїСЂРёР»РµР¶Р°С‰РёС‚Рµ РїРѕРјРµС‰РµРЅРёСЏ Рё РѕР±С‰РёС‚Рµ С‡Р°СЃС‚Рё, РєРѕРёС‚Рѕ СЃР° РЅРµСЂР°Р·РґРµР»РЅР° С‡Р°СЃС‚ РѕС‚ РѕР±РµРєС‚Р°(СЃРІРѕР±РѕРґРµРЅ С‚РµРєСЃС‚)
+	string BEG_DATE;//  D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+	string END_DATE;//  D	10	0			Р”Р°С‚Р° РЅР° РѕС‚СЂРµРіРёСЃС‚СЂР°С†РёСЏ
 };
 
 struct structDataOGRPIMO
 {
-	////F name	type	Len	dec	flag	table	Име на полето
+	////F name	type	Len	dec	flag	table	РРјРµ РЅР° РїРѕР»РµС‚Рѕ
 	string IDENT;	//F IDENT    C  20 0 3 POZEMLIMOTI
 	int TYPE;     //S   3 0 2
 	int DOCCOD;   //L  10 0 3 DOCS
 	int DOCCOD1;  //L  10 0 3 DOCS
 	int STATUS;   //S   1 0 2
-	string BEG_DATE;	//D	10	0			Дата на регистрация
-	string END_DATE;	//D	10	0			Дата на отрегистрация
+	string BEG_DATE;	//D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+	string END_DATE;	//D	10	0			Р”Р°С‚Р° РЅР° РѕС‚СЂРµРіРёСЃС‚СЂР°С†РёСЏ
 };
 
 struct structDataMESTNOSTI
 {
-	////F name	type	Len	dec	flag	table	Име на полето
-	int MESTNOST;	//S	4	0	3	MESTNOSTI	Код на местност
-	string NAME;	//C	20	0			Номер на партида от ИР
-	string BEG_DATE;	//D	10	0			Дата на регистрация
-	string END_DATE;	//D	10	0			Дата на отрегистрация
+	////F name	type	Len	dec	flag	table	РРјРµ РЅР° РїРѕР»РµС‚Рѕ
+	int MESTNOST;	//S	4	0	3	MESTNOSTI	РљРѕРґ РЅР° РјРµСЃС‚РЅРѕСЃС‚
+	string NAME;	//C	20	0			РќРѕРјРµСЂ РЅР° РїР°СЂС‚РёРґР° РѕС‚ РР 
+	string BEG_DATE;	//D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+	string END_DATE;	//D	10	0			Р”Р°С‚Р° РЅР° РѕС‚СЂРµРіРёСЃС‚СЂР°С†РёСЏ
 };
 
 struct structAttrTables
@@ -230,54 +230,54 @@ struct structAttrTables
 
 struct structNomTABLEVIDS
 {
-	int VIDS;		//S	2	0	2		Вид собственост	F VIDS S 2 0 2
+	int VIDS;		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚	F VIDS S 2 0 2
 	string VIDS_txt; // C 30 0 2
 };
 
 struct structNomTABLEVIDT
 {
-	int VIDT;		//S	2	0	2		Вид собственост	F VIDS S 2 0 2
+	int VIDT;		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚	F VIDS S 2 0 2
 	string VIDT_txt; // C 30 0 2
 };
 struct structNomTABLENTP
 {
-	int NTP;		//S	2	0	2		Вид собственост	F VIDS S 2 0 2
+	int NTP;		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚	F VIDS S 2 0 2
 	string NTP_txt; // C 30 0 2
 };
 
 struct structNomTABLEVFUNC
 {
-	int VFUNC;		//S	2	0	2		Вид собственост	F VIDS S 2 0 2
+	int VFUNC;		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚	F VIDS S 2 0 2
 	string VFUNC_txt; // C 30 0 2
 };
 struct structNomTABLEPREDN
 {
-	int PREDN;		//S	2	0	2		Вид собственост	F VIDS S 2 0 2
+	int PREDN;		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚	F VIDS S 2 0 2
 	string PREDN_txt; // C 30 0 2
 };
 struct structNomTABLEOGRPIMO_TYPE
 {
-	int TYPE;		//S	2	0	2		Вид собственост	F VIDS S 2 0 2
+	int TYPE;		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚	F VIDS S 2 0 2
 	string TYPE_txt; // C 30 0 2
 };
 
 struct structNomTABLENADPISI
 {
-	int TYPE;		//S	2	0	2		Вид собственост	F VIDS S 2 0 2
+	int TYPE;		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚	F VIDS S 2 0 2
 	string TYPE_txt; // C 30 0 2
 };
 
 struct structNomenclatureTables
 {
 	std::map<std::string, std::vector<structField>> tableFields;
-	std::map<std::string, std::map<std::string, std::string>> tableNomenclaturеs;
-	std::map<int, structNomTABLEVIDS> tableNomenclaturеsVIDS;
-	std::map<int, structNomTABLEVIDT> tableNomenclaturеsVIDT;
-	std::map<int, structNomTABLENTP> tableNomenclaturеsNTP;
-	std::map<int, structNomTABLEVFUNC> tableNomenclaturеsVFUNC;
-	std::map<int, structNomTABLEPREDN> tableNomenclaturеsPREDN;
-	std::map<int, structNomTABLEOGRPIMO_TYPE> tableNomenclaturеsOGRPIMO_TYPE;
-	std::map<int, structNomTABLENADPISI> tableNomenclaturеsNADPISI;
+	std::map<std::string, std::map<std::string, std::string>> tableNomenclatures;
+	std::map<int, structNomTABLEVIDS> tableNomenclaturesVIDS;
+	std::map<int, structNomTABLEVIDT> tableNomenclaturesVIDT;
+	std::map<int, structNomTABLENTP> tableNomenclaturesNTP;
+	std::map<int, structNomTABLEVFUNC> tableNomenclaturesVFUNC;
+	std::map<int, structNomTABLEPREDN> tableNomenclaturesPREDN;
+	std::map<int, structNomTABLEOGRPIMO_TYPE> tableNomenclaturesOGRPIMO_TYPE;
+	std::map<int, structNomTABLENADPISI> tableNomenclaturesNADPISI;
 };
 
 structCharArray readFile(const char* filename);

@@ -1,0 +1,39 @@
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+# http_archive(
+#     name = "rules_cc",
+#     sha256 = "c22f7b4b87c0604f08479190fc0fb09c928982ff8f52b797263505e3b5a75f89",
+#     urls = ["https://github.com/bazelbuild/rules_cc/archive/58f8e026c00a8a20767e3dc669f46ba23bc93bdb.tar.gz"],
+# )
+
+new_local_repository(
+    name = "lib_gdal",
+    build_file = "third_party/lib_gdal.BUILD",
+    path = "/usr",
+)
+
+SQLITE_BAZEL_COMMIT = "d8e1f51c692735def9844badc42b9543c3fb4985"
+
+http_archive(
+    name = "com_github_rockwotj_sqlite_bazel",
+    strip_prefix = "sqlite-bazel-" + SQLITE_BAZEL_COMMIT,
+    urls = ["https://github.com/rockwotj/sqlite-bazel/archive/%s.zip" % SQLITE_BAZEL_COMMIT],
+)
+
+#####################################################################
+# Boost com_github_nelhage_rules_boost
+#####################################################################
+_RULES_BOOST_COMMIT = "ef58870fe00ecb8047cd34324b8c21221387d5fc"
+
+http_archive(
+    name = "com_github_nelhage_rules_boost",
+    # sha256 = "c1b8b2adc3b4201683cf94dda7eef3fc0f4f4c0ea5caa3ed3feffe07e1fb5b15",
+    strip_prefix = "rules_boost-%s" % _RULES_BOOST_COMMIT,
+    urls = [
+        "https://github.com/nelhage/rules_boost/archive/%s.tar.gz" % _RULES_BOOST_COMMIT,
+    ],
+)
+
+load("@com_github_nelhage_rules_boost//:boost/boost.bzl", "boost_deps")
+
+boost_deps()

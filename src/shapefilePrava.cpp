@@ -33,7 +33,7 @@ vector<structFieldShape> ShapefilePrava::initArrFieldsShapefilePRAVA()
 		{ "BEG_DATE", OGRFieldType(OFTString), 10, "tableAttributesPRAVA" }, //D	10	0			Дата на регистрация на правото
 		{ "END_DATE", OGRFieldType(OFTString), 10, "tableAttributesPRAVA" }, //D	10	0			Дата на прекратяване на правото
 		{ "END_TIME", OGRFieldType(OFTString), 5, "tableAttributesPRAVA" }, //T	5	0			Време(момент) на прекратяване на правото
-		{ "VIDS_txt", OGRFieldType(OFTString), 30, "tableNomenclaturеsVIDS" }, // key VIDS;
+		{ "VIDS_txt", OGRFieldType(OFTString), 30, "tableNomenclaturesVIDS" }, // key VIDS;
 		//TABLE PERSONS key PERSON
 		{ "SUBTYPE_", OGRFieldType(OFTInteger), 1, "tableAttributesPERSONS" }, // S	1	0	2		Вид на субекта, код от номенклатура
 		{ "NAME_", OGRFieldType(OFTString), 45, "tableAttributesPERSONS" },	// C	45	0			Име на собственик
@@ -253,7 +253,7 @@ void ShapefilePrava::createShapefilePRAVA (string layerName)  //(string nameShap
 					else if (f.name == "VIDS_txt")
 					{
 						structNomTABLEVIDS t;
-						t = nomTables.tableNomenclaturеsVIDS[datarowPRAVA.VIDS];
+						t = nomTables.tableNomenclaturesVIDS[datarowPRAVA.VIDS];
 						const char * ch = t.VIDS_txt.c_str();
 						poFeature->SetField(n, ch);
 					}

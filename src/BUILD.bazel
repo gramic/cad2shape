@@ -1,0 +1,55 @@
+# load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+cc_library(
+    name = "cad2shape_lib",
+    srcs = [
+        "data_class.cpp",
+        "helper.cpp",
+        "shapefileImoti.cpp",
+        "shapefileNadpisi.cpp",
+        "shapefileOgrpimo.cpp",
+        "shapefilePrava.cpp",
+        "shapefileSgradi.cpp",
+        "shapefileShemi.cpp",
+        # "shell.c",
+        "stdafx.cpp",
+    ],
+    hdrs = [
+        "data_class.h",
+        "helper_template.cpp",
+        "helper.h",
+        "shapefileImoti.h",
+        "shapefileNadpisi.h",
+        "shapefileOgrpimo.h",
+        "shapefilePrava.h",
+        "shapefileSgradi.h",
+        "shapefileShemi.h",
+        "stdafx.h",
+        # "targetver.h",
+    ],
+    includes = [
+        # "external/lib_gdal/ogr/ogrsf_frmts",
+        "external/lib_gdal/ogr/ogrsf_frmts",
+    ],
+    linkopts = [
+        #     "-pthread",
+        "-ldl",
+        #     "-libxerces-c-3.2",
+    ],
+    deps = [
+        "@boost//:filesystem",
+        "@boost//:smart_ptr",
+        "@lib_gdal",
+    ],
+)
+
+cc_binary(
+    name = "cad2shape",
+    srcs = ["cad2shape.cpp"],
+    deps = [
+        ":cad2shape_lib",
+        "@com_github_rockwotj_sqlite_bazel//:sqlite3",
+        # "@boost//:endian",
+        # "@boost//:filesystem",
+    ],
+)

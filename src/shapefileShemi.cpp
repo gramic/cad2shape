@@ -30,8 +30,8 @@ vector<structFieldShape> ShapefileShemi::initArrFieldsShapefileSHEMI()
 		{ "DOPS", OGRFieldType(OFTString), 80, "tableAttributesAPARTS" }, //F DOPS	C	80	0			Вид и площ на прилежащите помещения и общите части, които са неразделна част от обекта(свободен текст)
 		{"BEG_DATE", OGRFieldType(OFTString), 10, "tableAttributesAPARTS" }, //structField BEG_DATE;	//D	10	0			Дата на регистрация
 		{ "END_DATE", OGRFieldType(OFTString), 10, "tableAttributesAPARTS" }, //structField END_DATE;	//D	10	0			Дата на отрегистрация};
-		{ "VIDS_txt", OGRFieldType(OFTString), 30, "tableNomenclaturеsVIDS" }, // key VIDS;
-		{ "PREDN_txt", OGRFieldType(OFTString), 50, "tableNomenclaturеsPREDN" }, // key PREDN;
+		{ "VIDS_txt", OGRFieldType(OFTString), 30, "tableNomenclaturesVIDS" }, // key VIDS;
+		{ "PREDN_txt", OGRFieldType(OFTString), 50, "tableNomenclaturesPREDN" }, // key PREDN;
 	};
 	 
 	return arrFieldsShapefileSHEMI;
@@ -204,14 +204,14 @@ void ShapefileShemi::createShapefileSHEMI()  //(string nameShapeFile, vector<str
 			else if (f.name == "VIDS_txt")
 			{
 				structNomTABLEVIDS t;
-				t = nomTables.tableNomenclaturеsVIDS[datarowAPARTS.VIDS];
+				t = nomTables.tableNomenclaturesVIDS[datarowAPARTS.VIDS];
 				const char * ch = t.VIDS_txt.c_str();
 				poFeature->SetField(n, ch);
 			}
 			else if (f.name == "PREDN_txt")
 			{
 				structNomTABLEPREDN t;
-				t = nomTables.tableNomenclaturеsPREDN[datarowAPARTS.PREDN];
+				t = nomTables.tableNomenclaturesPREDN[datarowAPARTS.PREDN];
 				const char * ch = t.PREDN_txt.c_str();
 				poFeature->SetField(n, ch);
 			}

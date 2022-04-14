@@ -17,25 +17,25 @@ vector<structFieldShape> ShapefileSgradi::initArrFieldsShapefileSGRADI()
 {
 	vector<structFieldShape> arrFieldsShapefileSGRADI =
 	{
-		{ "IDENT", OGRFieldType(OFTString), 20, "tableAttributesSGRADI" },	//C	20	0	1		Èäåíòèôèêàòîð íà ñãðàäà
-		{ "VIDS", OGRFieldType(OFTInteger), 2, "tableAttributesSGRADI" },		//S	2	0	2		Âèä ñîáñòâåíîñò
-		{ "CONST", OGRFieldType(OFTInteger), 2, "tableAttributesSGRADI" }, 	//S	2	0	2		Êîíñòðóêöèÿ íà ñãðàäàòà
-		{ "VFUNC", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 	//S	3	0	2		Ôóíêöèîíàëíî ïðåäíàçíà÷åíèå íà ñãðàäàòà
-		{ "VFUNCOLD", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 	//S	3	0	2		Ôóíêöèîíàëíî ïðåäíàçíà÷åíèå íà ñãðàäàòà –(ñòàðà íîìåíêëàòóðà)
-		{ "GOD", OGRFieldType(OFTInteger), 4, "tableAttributesSGRADI" }, 		//S	4	0			Ãîäèíà íà ïîñòðîÿâàíå íà ñãðàäàòà
-		{ "PARTIDA", OGRFieldType(OFTString), 20, "tableAttributesSGRADI" }, 	//C	20	0			Íîìåð íà ïàðòèäà îò ÈÐ
-		{ "NOMER1", OGRFieldType(OFTString), 10, "tableAttributesSGRADI" }, 	//C	10	0			Ñòàð ïëàíîñíèìà÷åí íîìåð
-		{ "ÅÒ", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 		//S	3	0			Áðîé åòàæè íà ñãðàäàòà
-		{ "ÅÒ1", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 		//S	3	0			Áðîé äîïúëíèòåëíè åòàæè
-		{ "BRPOM", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 	//S	3	0			Áðîé ñàìîñòîÿòåëíè îáåêòè
-		{ "ADDRCODE", OGRFieldType(OFTInteger), 10, "tableAttributesSGRADI" }, 	//L	10	0	3	ADDRESS	Àäðåñ – êîä
-		{ "LEGAL", OGRFieldType(OFTInteger), 1, "tableAttributesSGRADI" }, 	//S	1	0			Ôëàã çà çàêîííîñò : 0 - íÿìà äàííè,	1 - íåçàêîííà, 2 – çàêîííà
-		{ "LEGALDOC", OGRFieldType(OFTString), 20, "tableAttributesSGRADI" },  //C	20	0			Îïèñàíèå íà äîêóìåíòèòå çà çàêîííîñò
-		{ "BEG_DATE", OGRFieldType(OFTString), 10, "tableAttributesSGRADI" }, 	//D	10	0			Äàòà íà ðåãèñòðàöèÿ
-		{ "END_DATE", OGRFieldType(OFTString), 10, "tableAttributesSGRADI" }, 	//D	10	0			Äàòà íà îòðåãèñòðàöèÿ};
+		{ "IDENT", OGRFieldType(OFTString), 20, "tableAttributesSGRADI" },	//C	20	0	1		Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð½Ð° ÑÐ³Ñ€Ð°Ð´Ð°
+		{ "VIDS", OGRFieldType(OFTInteger), 2, "tableAttributesSGRADI" },		//S	2	0	2		Ð’Ð¸Ð´ ÑÐ¾Ð±ÑÑ‚Ð²ÐµÐ½Ð¾ÑÑ‚
+		{ "CONST", OGRFieldType(OFTInteger), 2, "tableAttributesSGRADI" }, 	//S	2	0	2		ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ†Ð¸Ñ Ð½Ð° ÑÐ³Ñ€Ð°Ð´Ð°Ñ‚Ð°
+		{ "VFUNC", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 	//S	3	0	2		Ð¤ÑƒÐ½ÐºÑ†Ð¸Ð¾Ð½Ð°Ð»Ð½Ð¾ Ð¿Ñ€ÐµÐ´Ð½Ð°Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð½Ð° ÑÐ³Ñ€Ð°Ð´Ð°Ñ‚Ð°
+		{ "VFUNCOLD", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 	//S	3	0	2		Ð¤ÑƒÐ½ÐºÑ†Ð¸Ð¾Ð½Ð°Ð»Ð½Ð¾ Ð¿Ñ€ÐµÐ´Ð½Ð°Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð½Ð° ÑÐ³Ñ€Ð°Ð´Ð°Ñ‚Ð° â€“(ÑÑ‚Ð°Ñ€Ð° Ð½Ð¾Ð¼ÐµÐ½ÐºÐ»Ð°Ñ‚ÑƒÑ€Ð°)
+		{ "GOD", OGRFieldType(OFTInteger), 4, "tableAttributesSGRADI" }, 		//S	4	0			Ð“Ð¾Ð´Ð¸Ð½Ð° Ð½Ð° Ð¿Ð¾ÑÑ‚Ñ€Ð¾ÑÐ²Ð°Ð½Ðµ Ð½Ð° ÑÐ³Ñ€Ð°Ð´Ð°Ñ‚Ð°
+		{ "PARTIDA", OGRFieldType(OFTString), 20, "tableAttributesSGRADI" }, 	//C	20	0			ÐÐ¾Ð¼ÐµÑ€ Ð½Ð° Ð¿Ð°Ñ€Ñ‚Ð¸Ð´Ð° Ð¾Ñ‚ Ð˜Ð 
+		{ "NOMER1", OGRFieldType(OFTString), 10, "tableAttributesSGRADI" }, 	//C	10	0			Ð¡Ñ‚Ð°Ñ€ Ð¿Ð»Ð°Ð½Ð¾ÑÐ½Ð¸Ð¼Ð°Ñ‡ÐµÐ½ Ð½Ð¾Ð¼ÐµÑ€
+		{ "Ð•Ð¢", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 		//S	3	0			Ð‘Ñ€Ð¾Ð¹ ÐµÑ‚Ð°Ð¶Ð¸ Ð½Ð° ÑÐ³Ñ€Ð°Ð´Ð°Ñ‚Ð°
+		{ "Ð•Ð¢1", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 		//S	3	0			Ð‘Ñ€Ð¾Ð¹ Ð´Ð¾Ð¿ÑŠÐ»Ð½Ð¸Ñ‚ÐµÐ»Ð½Ð¸ ÐµÑ‚Ð°Ð¶Ð¸
+		{ "BRPOM", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 	//S	3	0			Ð‘Ñ€Ð¾Ð¹ ÑÐ°Ð¼Ð¾ÑÑ‚Ð¾ÑÑ‚ÐµÐ»Ð½Ð¸ Ð¾Ð±ÐµÐºÑ‚Ð¸
+		{ "ADDRCODE", OGRFieldType(OFTInteger), 10, "tableAttributesSGRADI" }, 	//L	10	0	3	ADDRESS	ÐÐ´Ñ€ÐµÑ â€“ ÐºÐ¾Ð´
+		{ "LEGAL", OGRFieldType(OFTInteger), 1, "tableAttributesSGRADI" }, 	//S	1	0			Ð¤Ð»Ð°Ð³ Ð·Ð° Ð·Ð°ÐºÐ¾Ð½Ð½Ð¾ÑÑ‚ : 0 - Ð½ÑÐ¼Ð° Ð´Ð°Ð½Ð½Ð¸,	1 - Ð½ÐµÐ·Ð°ÐºÐ¾Ð½Ð½Ð°, 2 â€“ Ð·Ð°ÐºÐ¾Ð½Ð½Ð°
+		{ "LEGALDOC", OGRFieldType(OFTString), 20, "tableAttributesSGRADI" },  //C	20	0			ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð½Ð° Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð¸Ñ‚Ðµ Ð·Ð° Ð·Ð°ÐºÐ¾Ð½Ð½Ð¾ÑÑ‚
+		{ "BEG_DATE", OGRFieldType(OFTString), 10, "tableAttributesSGRADI" }, 	//D	10	0			Ð”Ð°Ñ‚Ð° Ð½Ð° Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ
+		{ "END_DATE", OGRFieldType(OFTString), 10, "tableAttributesSGRADI" }, 	//D	10	0			Ð”Ð°Ñ‚Ð° Ð½Ð° Ð¾Ñ‚Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ};
 //
-		{ "VIDS_txt", OGRFieldType(OFTString), 30, "tableNomenclaturåsVIDS" }, // key VIDS;
-		{ "VFUNC_txt", OGRFieldType(OFTString), 50, "tableNomenclaturåsVFUNC" }, // key VFUNC;
+		{ "VIDS_txt", OGRFieldType(OFTString), 30, "tableNomenclaturesVIDS" }, // key VIDS;
+		{ "VFUNC_txt", OGRFieldType(OFTString), 50, "tableNomenclaturesVFUNC" }, // key VFUNC;
 	};
 
 	return arrFieldsShapefileSGRADI;
@@ -176,14 +176,14 @@ void ShapefileSgradi::createShapefileSGRADI()
 				const char * ch = datarowSGRADI.NOMER1.c_str();
 				poFeature->SetField(n, ch);
 			}
-			else if (f.name == "ÅÒ")
+			else if (f.name == "Ð•Ð¢")
 			{
-				int i = datarowSGRADI.ÅÒ;
+				int i = datarowSGRADI.Ð•Ð¢;
 				poFeature->SetField(n, i);
 			}
-			else if (f.name == "ÅÒ1")
+			else if (f.name == "Ð•Ð¢1")
 			{
-				int i = datarowSGRADI.ÅÒ1;
+				int i = datarowSGRADI.Ð•Ð¢1;
 				poFeature->SetField(n, i);
 			}
 			else if (f.name == "BRPOM")
@@ -220,14 +220,14 @@ void ShapefileSgradi::createShapefileSGRADI()
 			else if (f.name == "VIDS_txt")
 			{
 				structNomTABLEVIDS t;
-				t = nomTables.tableNomenclaturåsVIDS[datarowSGRADI.VIDS];
+				t = nomTables.tableNomenclaturesVIDS[datarowSGRADI.VIDS];
 				const char * ch = t.VIDS_txt.c_str();
 				poFeature->SetField(n, ch);
 			}
 			else if (f.name == "VFUNC_txt")
 			{
 				structNomTABLEVFUNC t;
-				t = nomTables.tableNomenclaturåsVFUNC[datarowSGRADI.VFUNC];
+				t = nomTables.tableNomenclaturesVFUNC[datarowSGRADI.VFUNC];
 				const char * ch = t.VFUNC_txt.c_str();
 				poFeature->SetField(n, ch);
 			}

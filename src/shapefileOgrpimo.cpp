@@ -26,7 +26,7 @@ vector<structFieldShape> ShapefileOgrpimo::initArrFieldsShapefile()
 		{ "BEG_DATE", OGRFieldType(OFTString), 10, "tableAttributesOGRPIMO" },	//D	10	0			Äàòà íà ðåãèñòðàöèÿ íà ïðàâîòî
 		{ "END_DATE", OGRFieldType(OFTString), 10, "tableAttributesOGRPIMO" },	//D	10	0			Äàòà íà ïðåêðàòÿâàíå íà ïðàâîòî
 
-		{ "TYPE_txt", OGRFieldType(OFTString), 250, "tableNomenclaturåsOGRPIMO_TYPE" }, // key TYPE;
+		{ "TYPE_txt", OGRFieldType(OFTString), 250, "tableNomenclaturesOGRPIMO_TYPE" }, // key TYPE;
 
 	};
 
@@ -175,7 +175,7 @@ void ShapefileOgrpimo::createShapefile()
 					else if (f.name == "TYPE_txt")
 					{
 						structNomTABLEOGRPIMO_TYPE t;
-						t = nomTables.tableNomenclaturåsOGRPIMO_TYPE[datarow.TYPE];
+						t = nomTables.tableNomenclaturesOGRPIMO_TYPE[datarow.TYPE];
 						const char * ch = t.TYPE_txt.c_str();
 						poFeature->SetField(n, ch);
 					}

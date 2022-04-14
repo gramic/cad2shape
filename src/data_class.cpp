@@ -415,27 +415,27 @@ void populateAttributeTable(structCharArray &charArrayFromFile, structAttrTables
 				{
 					splitstringcomma = splitDataRow(myInputstring, fieldsCountPOZEMLIMOTI);
 					structDataPOZEMLIMOTI t;
-					t.IDENT = trim(splitstringcomma[0], trimCharQUOTE);	//C	20	0	1		Идентификатор на имот
-					t.VIDT = atoi(splitstringcomma[1]);		//S	1	0	2		Вид територия
-					t.VIDTOLD = atoi(splitstringcomma[2]);		//S	1	0	2		Вид територия(стара номенклатура)
-					t.VIDS = atoi(splitstringcomma[3]);		//S	2	0	2		Вид собственост
-					t.NTP = atoi(splitstringcomma[4]);		//S	4	0	2		Начин на трайно ползване
-					t.NTPOLD = atoi(splitstringcomma[5]);		//S	4	0	2		Начин на трайно ползване(стара номенклатура)
-					t.MESTNOST = atoi(splitstringcomma[6]);	//S	4	0	3	MESTNOSTI	Код на местност
-					t.PARTIDA = trim(splitstringcomma[7], trimCharQUOTE);	//C	20	0			Номер на партида от ИР
-					t.ADDRCODE = atoi(splitstringcomma[8]);	//L	10	0	3	ADDRESS	Адрес на имота
-					t.NOMER1 = trim(splitstringcomma[9], trimCharQUOTE);	//C	10	0			Стар планоснимачен номер
-					t.KVARTAL = trim(splitstringcomma[10], trimCharQUOTE);	//C	10	0			Номер на квартал от регулационен план
-					t.PARCEL = trim(splitstringcomma[11], trimCharQUOTE); 	//C	10	0			Номер на парцел  от регулационен план с римски цифри
-					t.GODCAD = atod(splitstringcomma[12]);	//N	4	0			Година на стария кадастрален план
-					t.GODREG = atod(splitstringcomma[13]);	//N	4	0			Година на стария регулационен план
-					t.CODZAP = atoi(splitstringcomma[14]);		//S	4	0	3	ZAPOVEDI	Код на последната заповед за одобряване
-					t.ZACON = atoi(splitstringcomma[15]);		//S	2	0	2		Код на закон, по който са установени границите
-					t.KAT = atoi(splitstringcomma[16]);			//S	2	0			Преобладаваща категория на земята
-					t.NVAST = atoi(splitstringcomma[17]);		//S	1	0	2		Начин на възстановяване - от класификатора за начините на възстановяване
-					t.VAVOD = atoi(splitstringcomma[18]);		//B	1	0			флаг за въвод във владение
-					t.BEG_DATE = trim(splitstringcomma[19], trimCharQUOTE);	//D	10	0			Дата на регистрация
-					t.END_DATE = trim(splitstringcomma[20], trimCharQUOTE);	//D	10	0			Дата на отрегистрация
+					t.IDENT = trim(splitstringcomma[0], trimCharQUOTE);	//C	20	0	1		РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РЅР° РёРјРѕС‚
+					t.VIDT = atoi(splitstringcomma[1]);		//S	1	0	2		Р’РёРґ С‚РµСЂРёС‚РѕСЂРёСЏ
+					t.VIDTOLD = atoi(splitstringcomma[2]);		//S	1	0	2		Р’РёРґ С‚РµСЂРёС‚РѕСЂРёСЏ(СЃС‚Р°СЂР° РЅРѕРјРµРЅРєР»Р°С‚СѓСЂР°)
+					t.VIDS = atoi(splitstringcomma[3]);		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚
+					t.NTP = atoi(splitstringcomma[4]);		//S	4	0	2		РќР°С‡РёРЅ РЅР° С‚СЂР°Р№РЅРѕ РїРѕР»Р·РІР°РЅРµ
+					t.NTPOLD = atoi(splitstringcomma[5]);		//S	4	0	2		РќР°С‡РёРЅ РЅР° С‚СЂР°Р№РЅРѕ РїРѕР»Р·РІР°РЅРµ(СЃС‚Р°СЂР° РЅРѕРјРµРЅРєР»Р°С‚СѓСЂР°)
+					t.MESTNOST = atoi(splitstringcomma[6]);	//S	4	0	3	MESTNOSTI	РљРѕРґ РЅР° РјРµСЃС‚РЅРѕСЃС‚
+					t.PARTIDA = trim(splitstringcomma[7], trimCharQUOTE);	//C	20	0			РќРѕРјРµСЂ РЅР° РїР°СЂС‚РёРґР° РѕС‚ РР 
+					t.ADDRCODE = atoi(splitstringcomma[8]);	//L	10	0	3	ADDRESS	РђРґСЂРµСЃ РЅР° РёРјРѕС‚Р°
+					t.NOMER1 = trim(splitstringcomma[9], trimCharQUOTE);	//C	10	0			РЎС‚Р°СЂ РїР»Р°РЅРѕСЃРЅРёРјР°С‡РµРЅ РЅРѕРјРµСЂ
+					t.KVARTAL = trim(splitstringcomma[10], trimCharQUOTE);	//C	10	0			РќРѕРјРµСЂ РЅР° РєРІР°СЂС‚Р°Р» РѕС‚ СЂРµРіСѓР»Р°С†РёРѕРЅРµРЅ РїР»Р°РЅ
+					t.PARCEL = trim(splitstringcomma[11], trimCharQUOTE); 	//C	10	0			РќРѕРјРµСЂ РЅР° РїР°СЂС†РµР»  РѕС‚ СЂРµРіСѓР»Р°С†РёРѕРЅРµРЅ РїР»Р°РЅ СЃ СЂРёРјСЃРєРё С†РёС„СЂРё
+					t.GODCAD = atod(splitstringcomma[12]);	//N	4	0			Р“РѕРґРёРЅР° РЅР° СЃС‚Р°СЂРёСЏ РєР°РґР°СЃС‚СЂР°Р»РµРЅ РїР»Р°РЅ
+					t.GODREG = atod(splitstringcomma[13]);	//N	4	0			Р“РѕРґРёРЅР° РЅР° СЃС‚Р°СЂРёСЏ СЂРµРіСѓР»Р°С†РёРѕРЅРµРЅ РїР»Р°РЅ
+					t.CODZAP = atoi(splitstringcomma[14]);		//S	4	0	3	ZAPOVEDI	РљРѕРґ РЅР° РїРѕСЃР»РµРґРЅР°С‚Р° Р·Р°РїРѕРІРµРґ Р·Р° РѕРґРѕР±СЂСЏРІР°РЅРµ
+					t.ZACON = atoi(splitstringcomma[15]);		//S	2	0	2		РљРѕРґ РЅР° Р·Р°РєРѕРЅ, РїРѕ РєРѕР№С‚Рѕ СЃР° СѓСЃС‚Р°РЅРѕРІРµРЅРё РіСЂР°РЅРёС†РёС‚Рµ
+					t.KAT = atoi(splitstringcomma[16]);			//S	2	0			РџСЂРµРѕР±Р»Р°РґР°РІР°С‰Р° РєР°С‚РµРіРѕСЂРёСЏ РЅР° Р·РµРјСЏС‚Р°
+					t.NVAST = atoi(splitstringcomma[17]);		//S	1	0	2		РќР°С‡РёРЅ РЅР° РІСЉР·СЃС‚Р°РЅРѕРІСЏРІР°РЅРµ - РѕС‚ РєР»Р°СЃРёС„РёРєР°С‚РѕСЂР° Р·Р° РЅР°С‡РёРЅРёС‚Рµ РЅР° РІСЉР·СЃС‚Р°РЅРѕРІСЏРІР°РЅРµ
+					t.VAVOD = atoi(splitstringcomma[18]);		//B	1	0			С„Р»Р°Рі Р·Р° РІСЉРІРѕРґ РІСЉРІ РІР»Р°РґРµРЅРёРµ
+					t.BEG_DATE = trim(splitstringcomma[19], trimCharQUOTE);	//D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+					t.END_DATE = trim(splitstringcomma[20], trimCharQUOTE);	//D	10	0			Р”Р°С‚Р° РЅР° РѕС‚СЂРµРіРёСЃС‚СЂР°С†РёСЏ
 
 					attrTables.tableAttributesPOZEMLIMOTI[t.IDENT] = t;
 				}
@@ -444,23 +444,23 @@ void populateAttributeTable(structCharArray &charArrayFromFile, structAttrTables
 					splitstringcomma = splitDataRow(myInputstring, fieldsCountSGRADI);
 					structDataSGRADI t;
 
-					////F name	type	Len	dec	flag	table	Име на полето
-					t.IDENT = trim(splitstringcomma[0], trimCharQUOTE);	//C	20	0	1		Идентификатор на сграда
-					t.VIDS = atoi(splitstringcomma[1]);		//S	2	0	2		Вид собственост
-					t.CONST = atoi(splitstringcomma[2]);	//S	2	0	2		Конструкция на сградата
-					t.VFUNC = atoi(splitstringcomma[3]);	//S	3	0	2		Функционално предназначение на сградата
-					t.VFUNCOLD = atoi(splitstringcomma[4]);	//S	3	0	2		Функционално предназначение на сградата –(стара номенклатура)
-					t.GOD = atoi(splitstringcomma[5]);		//S	4	0			Година на построяване на сградата
-					t.PARTIDA = trim(splitstringcomma[6], trimCharQUOTE);	//C	20	0			Номер на партида от ИР
-					t.NOMER1 = trim(splitstringcomma[7], trimCharQUOTE);	//C	10	0			Стар планоснимачен номер
-					t.ЕТ = atoi(splitstringcomma[8]);	//S	3	0			Брой етажи на сградата
-					t.ЕТ1 = atoi(splitstringcomma[9]);	//S	3	0			Брой допълнителни етажи
-					t.BRPOM = atoi(splitstringcomma[10]);	//S	3	0			Брой самостоятелни обекти
-					t.ADDRCODE = atoi(splitstringcomma[11]);	//L	10	0	3	ADDRESS	Адрес – код
-					t.LEGAL = atoi(splitstringcomma[12]);	//S	1	0			Флаг за законност : 0 - няма данни,	1 - незаконна, 2 – законна
-					t.LEGALDOC = trim(splitstringcomma[13], trimCharQUOTE);	//C	20	0			Описание на документите за законност
-					t.BEG_DATE = trim(splitstringcomma[14], trimCharQUOTE); //D	10	0			Дата на регистрация
-					t.END_DATE = trim(splitstringcomma[15], trimCharQUOTE);	//D	10	0			Дата на отрегистрация
+					////F name	type	Len	dec	flag	table	РРјРµ РЅР° РїРѕР»РµС‚Рѕ
+					t.IDENT = trim(splitstringcomma[0], trimCharQUOTE);	//C	20	0	1		РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РЅР° СЃРіСЂР°РґР°
+					t.VIDS = atoi(splitstringcomma[1]);		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚
+					t.CONST = atoi(splitstringcomma[2]);	//S	2	0	2		РљРѕРЅСЃС‚СЂСѓРєС†РёСЏ РЅР° СЃРіСЂР°РґР°С‚Р°
+					t.VFUNC = atoi(splitstringcomma[3]);	//S	3	0	2		Р¤СѓРЅРєС†РёРѕРЅР°Р»РЅРѕ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅРёРµ РЅР° СЃРіСЂР°РґР°С‚Р°
+					t.VFUNCOLD = atoi(splitstringcomma[4]);	//S	3	0	2		Р¤СѓРЅРєС†РёРѕРЅР°Р»РЅРѕ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅРёРµ РЅР° СЃРіСЂР°РґР°С‚Р° вЂ“(СЃС‚Р°СЂР° РЅРѕРјРµРЅРєР»Р°С‚СѓСЂР°)
+					t.GOD = atoi(splitstringcomma[5]);		//S	4	0			Р“РѕРґРёРЅР° РЅР° РїРѕСЃС‚СЂРѕСЏРІР°РЅРµ РЅР° СЃРіСЂР°РґР°С‚Р°
+					t.PARTIDA = trim(splitstringcomma[6], trimCharQUOTE);	//C	20	0			РќРѕРјРµСЂ РЅР° РїР°СЂС‚РёРґР° РѕС‚ РР 
+					t.NOMER1 = trim(splitstringcomma[7], trimCharQUOTE);	//C	10	0			РЎС‚Р°СЂ РїР»Р°РЅРѕСЃРЅРёРјР°С‡РµРЅ РЅРѕРјРµСЂ
+					t.Р•Рў = atoi(splitstringcomma[8]);	//S	3	0			Р‘СЂРѕР№ РµС‚Р°Р¶Рё РЅР° СЃРіСЂР°РґР°С‚Р°
+					t.Р•Рў1 = atoi(splitstringcomma[9]);	//S	3	0			Р‘СЂРѕР№ РґРѕРїСЉР»РЅРёС‚РµР»РЅРё РµС‚Р°Р¶Рё
+					t.BRPOM = atoi(splitstringcomma[10]);	//S	3	0			Р‘СЂРѕР№ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»РЅРё РѕР±РµРєС‚Рё
+					t.ADDRCODE = atoi(splitstringcomma[11]);	//L	10	0	3	ADDRESS	РђРґСЂРµСЃ вЂ“ РєРѕРґ
+					t.LEGAL = atoi(splitstringcomma[12]);	//S	1	0			Р¤Р»Р°Рі Р·Р° Р·Р°РєРѕРЅРЅРѕСЃС‚ : 0 - РЅСЏРјР° РґР°РЅРЅРё,	1 - РЅРµР·Р°РєРѕРЅРЅР°, 2 вЂ“ Р·Р°РєРѕРЅРЅР°
+					t.LEGALDOC = trim(splitstringcomma[13], trimCharQUOTE);	//C	20	0			РћРїРёСЃР°РЅРёРµ РЅР° РґРѕРєСѓРјРµРЅС‚РёС‚Рµ Р·Р° Р·Р°РєРѕРЅРЅРѕСЃС‚
+					t.BEG_DATE = trim(splitstringcomma[14], trimCharQUOTE); //D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+					t.END_DATE = trim(splitstringcomma[15], trimCharQUOTE);	//D	10	0			Р”Р°С‚Р° РЅР° РѕС‚СЂРµРіРёСЃС‚СЂР°С†РёСЏ
 					attrTables.tableAttributesSGRADI[t.IDENT] = t;
 				}
 				else if (tableName == "PRAVA")
@@ -468,21 +468,21 @@ void populateAttributeTable(structCharArray &charArrayFromFile, structAttrTables
 					splitstringcomma = splitDataRow(myInputstring, fieldsCountPRAVA);
 					structDataPRAVA t;
 
-					t.IDENT = trim(splitstringcomma[0], trimCharQUOTE);	//C	20	0	1		Идентификатор на поземлен имот, сграда или самостоятелен обект в сграда
-					t.VIDS = atoi(splitstringcomma[1]);		//S	2	0	2		Вид собственост
-					t.PERSON = trim(splitstringcomma[2], trimCharQUOTE);	//C	13	0	3	PERSONS	ЕГН / Булстат на носителя на правото
-					t.DOCCOD = atoi(splitstringcomma[3]);		//L	10	0	3	DOCS	Код на документ
-					t.DOCID1 = atoi(splitstringcomma[4]);	    //S	3	0			Идеална част : стойност на числителя, -1 при проценти, -2 при площ в кв.м.
-					t.DOCID2 = atod(splitstringcomma[5]);	//N	8	3			Идеална част : знаменател, число на процента или площта в кв.м.площ(в зависимост от DOCID1)
-					t.PLDOC = atod(splitstringcomma[6]);	//N	11	3			Площ по документ
-					t.PTYPE = atoi(splitstringcomma[7]);		//S	2	0	2		Начин на придобиване
-					t.PRAVOVID = atoi(splitstringcomma[8]);	//S	2	0	2		Код на вида право
-					t.SROK = trim(splitstringcomma[9], trimCharQUOTE);	//D	10	0			Крайна дата на правото когато правото е срочно
-					t.DOCIDENT = trim(splitstringcomma[10], trimCharQUOTE);	//C	30	0			Номер на обекта по документ - свободен текст, например квартал и парцел, пл.сним.номер и т.н.
-					t.DOP = atoi(splitstringcomma[11]);		//B	1	0			Флаг за допълнителнителен документ(собственост); Т – допълнително, F – основен документ
-					t.BEG_DATE = trim(splitstringcomma[12], trimCharQUOTE);	//D	10	0			Дата на регистрация на правото
-					t.END_DATE = trim(splitstringcomma[13], trimCharQUOTE);	//D	10	0			Дата на прекратяване на правото
-					t.END_TIME = trim(splitstringcomma[14], trimCharQUOTE);	//T	5	0			Време(момент) на прекратяване на правото
+					t.IDENT = trim(splitstringcomma[0], trimCharQUOTE);	//C	20	0	1		РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РЅР° РїРѕР·РµРјР»РµРЅ РёРјРѕС‚, СЃРіСЂР°РґР° РёР»Рё СЃР°РјРѕСЃС‚РѕСЏС‚РµР»РµРЅ РѕР±РµРєС‚ РІ СЃРіСЂР°РґР°
+					t.VIDS = atoi(splitstringcomma[1]);		//S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚
+					t.PERSON = trim(splitstringcomma[2], trimCharQUOTE);	//C	13	0	3	PERSONS	Р•Р“Рќ / Р‘СѓР»СЃС‚Р°С‚ РЅР° РЅРѕСЃРёС‚РµР»СЏ РЅР° РїСЂР°РІРѕС‚Рѕ
+					t.DOCCOD = atoi(splitstringcomma[3]);		//L	10	0	3	DOCS	РљРѕРґ РЅР° РґРѕРєСѓРјРµРЅС‚
+					t.DOCID1 = atoi(splitstringcomma[4]);	    //S	3	0			РРґРµР°Р»РЅР° С‡Р°СЃС‚ : СЃС‚РѕР№РЅРѕСЃС‚ РЅР° С‡РёСЃР»РёС‚РµР»СЏ, -1 РїСЂРё РїСЂРѕС†РµРЅС‚Рё, -2 РїСЂРё РїР»РѕС‰ РІ РєРІ.Рј.
+					t.DOCID2 = atod(splitstringcomma[5]);	//N	8	3			РРґРµР°Р»РЅР° С‡Р°СЃС‚ : Р·РЅР°РјРµРЅР°С‚РµР», С‡РёСЃР»Рѕ РЅР° РїСЂРѕС†РµРЅС‚Р° РёР»Рё РїР»РѕС‰С‚Р° РІ РєРІ.Рј.РїР»РѕС‰(РІ Р·Р°РІРёСЃРёРјРѕСЃС‚ РѕС‚ DOCID1)
+					t.PLDOC = atod(splitstringcomma[6]);	//N	11	3			РџР»РѕС‰ РїРѕ РґРѕРєСѓРјРµРЅС‚
+					t.PTYPE = atoi(splitstringcomma[7]);		//S	2	0	2		РќР°С‡РёРЅ РЅР° РїСЂРёРґРѕР±РёРІР°РЅРµ
+					t.PRAVOVID = atoi(splitstringcomma[8]);	//S	2	0	2		РљРѕРґ РЅР° РІРёРґР° РїСЂР°РІРѕ
+					t.SROK = trim(splitstringcomma[9], trimCharQUOTE);	//D	10	0			РљСЂР°Р№РЅР° РґР°С‚Р° РЅР° РїСЂР°РІРѕС‚Рѕ РєРѕРіР°С‚Рѕ РїСЂР°РІРѕС‚Рѕ Рµ СЃСЂРѕС‡РЅРѕ
+					t.DOCIDENT = trim(splitstringcomma[10], trimCharQUOTE);	//C	30	0			РќРѕРјРµСЂ РЅР° РѕР±РµРєС‚Р° РїРѕ РґРѕРєСѓРјРµРЅС‚ - СЃРІРѕР±РѕРґРµРЅ С‚РµРєСЃС‚, РЅР°РїСЂРёРјРµСЂ РєРІР°СЂС‚Р°Р» Рё РїР°СЂС†РµР», РїР».СЃРЅРёРј.РЅРѕРјРµСЂ Рё С‚.РЅ.
+					t.DOP = atoi(splitstringcomma[11]);		//B	1	0			Р¤Р»Р°Рі Р·Р° РґРѕРїСЉР»РЅРёС‚РµР»РЅРёС‚РµР»РµРЅ РґРѕРєСѓРјРµРЅС‚(СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚); Рў вЂ“ РґРѕРїСЉР»РЅРёС‚РµР»РЅРѕ, F вЂ“ РѕСЃРЅРѕРІРµРЅ РґРѕРєСѓРјРµРЅС‚
+					t.BEG_DATE = trim(splitstringcomma[12], trimCharQUOTE);	//D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ РЅР° РїСЂР°РІРѕС‚Рѕ
+					t.END_DATE = trim(splitstringcomma[13], trimCharQUOTE);	//D	10	0			Р”Р°С‚Р° РЅР° РїСЂРµРєСЂР°С‚СЏРІР°РЅРµ РЅР° РїСЂР°РІРѕС‚Рѕ
+					t.END_TIME = trim(splitstringcomma[14], trimCharQUOTE);	//T	5	0			Р’СЂРµРјРµ(РјРѕРјРµРЅС‚) РЅР° РїСЂРµРєСЂР°С‚СЏРІР°РЅРµ РЅР° РїСЂР°РІРѕС‚Рѕ
 
 					attrTables.tableAttributesPRAVA.insert(pair<string, structDataPRAVA>(fieldIDENT, t));
 				}
@@ -491,14 +491,14 @@ void populateAttributeTable(structCharArray &charArrayFromFile, structAttrTables
 					splitstringcomma = splitDataRow(myInputstring, fieldsCountOGRIMO);
 					structDataOGRPIMO t;
 
-					////F name	type	Len	dec	flag	table	Име на полето
+					////F name	type	Len	dec	flag	table	РРјРµ РЅР° РїРѕР»РµС‚Рѕ
 					t.IDENT = trim(splitstringcomma[0], trimCharQUOTE); 	//F IDENT    C  20 0 3 POZEMLIMOTI
 					t.TYPE = atoi(splitstringcomma[1]);      //S   3 0 2
 					t.DOCCOD = atoi(splitstringcomma[2]);    //L  10 0 3 DOCS
 					t.DOCCOD1 = atoi(splitstringcomma[3]);   //L  10 0 3 DOCS
 					t.STATUS = atoi(splitstringcomma[4]);    //S   1 0 2
-					t.BEG_DATE = trim(splitstringcomma[5], trimCharQUOTE);	//D	10	0			Дата на регистрация на правото
-					t.END_DATE = trim(splitstringcomma[6], trimCharQUOTE);	//D	10	0			Дата на прекратяване на правото
+					t.BEG_DATE = trim(splitstringcomma[5], trimCharQUOTE);	//D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ РЅР° РїСЂР°РІРѕС‚Рѕ
+					t.END_DATE = trim(splitstringcomma[6], trimCharQUOTE);	//D	10	0			Р”Р°С‚Р° РЅР° РїСЂРµРєСЂР°С‚СЏРІР°РЅРµ РЅР° РїСЂР°РІРѕС‚Рѕ
 
 					attrTables.tableAttributesOGRPIMO.insert(pair<string, structDataOGRPIMO>(t.IDENT, t));
 				}
@@ -506,19 +506,19 @@ void populateAttributeTable(structCharArray &charArrayFromFile, structAttrTables
 				{
 					splitstringcomma = splitDataRow(myInputstring, fieldsCountPERSONS);
 					structDataPERSONS t;
-					t.PERSON = trim(splitstringcomma[0], trimCharQUOTE);	// C	13	0	1		ЕГН / БУЛСТАТ на соб¬стве¬ник(не се въвежда буква в кода по БУЛСТАТ)
-					t.SUBTYPE = atoi(splitstringcomma[1]);	// S	1	0	2		Вид на субекта, код от номенклатура
-					t.NAME = trim(splitstringcomma[2], trimCharQUOTE);	// C	45	0			Име на собственик
-					t.NSTATE = trim(splitstringcomma[3], trimCharQUOTE);	// C	2	0	2		Адрес на собственика - буквен код на страна
-					t.ADDRCODE = atoi(splitstringcomma[4]);	// L	10	0	3	ADDRESS	Адрес на собственика - код на адрес
-					t.ADDR = trim(splitstringcomma[5], trimCharQUOTE);	// C	50	0			Пълен адрес на собственика - коментар
-					t.ADDRET = trim(splitstringcomma[6], trimCharQUOTE);	// C	4	0			Адрес на собственика – етаж
-					t.ADDRAP = trim(splitstringcomma[7], trimCharQUOTE);	// C	4	0			Адрес на собственика – апартамент
-					t.FLAG = atoi(splitstringcomma[8]);	    // B	1	0			Флаг за починал собственик
-					t.SPERSON = trim(splitstringcomma[9], trimCharQUOTE);	// C	10	0			ЕГН на свързано лице(съпруг / съпруга или физическо лице за ЕТ)
-					t.FIRMREG = trim(splitstringcomma[10], trimCharQUOTE);	// C	50	0			Данни за съдебна регистрация на фирма
-					t.BEG_DATE = trim(splitstringcomma[11], trimCharQUOTE);// D	10	0			Дата на регистрация
-					t.END_DATE = trim(splitstringcomma[12], trimCharQUOTE);// D	10	0			Дата на отрегистрация
+					t.PERSON = trim(splitstringcomma[0], trimCharQUOTE);	// C	13	0	1		Р•Р“Рќ / Р‘РЈР›РЎРўРђРў РЅР° СЃРѕР±В¬СЃС‚РІРµВ¬РЅРёРє(РЅРµ СЃРµ РІСЉРІРµР¶РґР° Р±СѓРєРІР° РІ РєРѕРґР° РїРѕ Р‘РЈР›РЎРўРђРў)
+					t.SUBTYPE = atoi(splitstringcomma[1]);	// S	1	0	2		Р’РёРґ РЅР° СЃСѓР±РµРєС‚Р°, РєРѕРґ РѕС‚ РЅРѕРјРµРЅРєР»Р°С‚СѓСЂР°
+					t.NAME = trim(splitstringcomma[2], trimCharQUOTE);	// C	45	0			РРјРµ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРє
+					t.NSTATE = trim(splitstringcomma[3], trimCharQUOTE);	// C	2	0	2		РђРґСЂРµСЃ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРєР° - Р±СѓРєРІРµРЅ РєРѕРґ РЅР° СЃС‚СЂР°РЅР°
+					t.ADDRCODE = atoi(splitstringcomma[4]);	// L	10	0	3	ADDRESS	РђРґСЂРµСЃ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРєР° - РєРѕРґ РЅР° Р°РґСЂРµСЃ
+					t.ADDR = trim(splitstringcomma[5], trimCharQUOTE);	// C	50	0			РџСЉР»РµРЅ Р°РґСЂРµСЃ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРєР° - РєРѕРјРµРЅС‚Р°СЂ
+					t.ADDRET = trim(splitstringcomma[6], trimCharQUOTE);	// C	4	0			РђРґСЂРµСЃ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРєР° вЂ“ РµС‚Р°Р¶
+					t.ADDRAP = trim(splitstringcomma[7], trimCharQUOTE);	// C	4	0			РђРґСЂРµСЃ РЅР° СЃРѕР±СЃС‚РІРµРЅРёРєР° вЂ“ Р°РїР°СЂС‚Р°РјРµРЅС‚
+					t.FLAG = atoi(splitstringcomma[8]);	    // B	1	0			Р¤Р»Р°Рі Р·Р° РїРѕС‡РёРЅР°Р» СЃРѕР±СЃС‚РІРµРЅРёРє
+					t.SPERSON = trim(splitstringcomma[9], trimCharQUOTE);	// C	10	0			Р•Р“Рќ РЅР° СЃРІСЉСЂР·Р°РЅРѕ Р»РёС†Рµ(СЃСЉРїСЂСѓРі / СЃСЉРїСЂСѓРіР° РёР»Рё С„РёР·РёС‡РµСЃРєРѕ Р»РёС†Рµ Р·Р° Р•Рў)
+					t.FIRMREG = trim(splitstringcomma[10], trimCharQUOTE);	// C	50	0			Р”Р°РЅРЅРё Р·Р° СЃСЉРґРµР±РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ РЅР° С„РёСЂРјР°
+					t.BEG_DATE = trim(splitstringcomma[11], trimCharQUOTE);// D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+					t.END_DATE = trim(splitstringcomma[12], trimCharQUOTE);// D	10	0			Р”Р°С‚Р° РЅР° РѕС‚СЂРµРіРёСЃС‚СЂР°С†РёСЏ
 
 					attrTables.tableAttributesPERSONS[t.PERSON] = t;
 				}
@@ -527,19 +527,19 @@ void populateAttributeTable(structCharArray &charArrayFromFile, structAttrTables
 					splitstringcomma = splitDataRow(myInputstring, fieldsCountAPARTS);
 					structDataAPARTS t;
 
-					t.IDENT = trim(splitstringcomma[0], trimCharQUOTE);   //	C	20	0	1		Идентификатор на самостоятелен обект
-					t.REM = trim(splitstringcomma[1], trimCharQUOTE);     //  C	20	0			Описание на обекта
-					t.PREDN = atoi(splitstringcomma[2]); 	    //  S	3	0	2		Предназначение на самостоятелен обект
-					t.VIDS = atoi(splitstringcomma[3]);	    //  S	2	0	2		Вид собственост
-					t.PARTIDA = trim(splitstringcomma[4], trimCharQUOTE);	//  C	20	0			Номер на партида от ИР
-					t.ADDRCODE = atoi(splitstringcomma[5]);	//  L	10	0	3	ADDRESS	Адрес – код
-					t.ADDRET = trim(splitstringcomma[6], trimCharQUOTE); //  C	4	0			Адрес – етаж
-					t.ADDRAP = trim(splitstringcomma[7], trimCharQUOTE);  //	C	4	0			Адрес – апартамент
-					t.PLDOC = atod(splitstringcomma[8]);	//  N	11	3			Площ по документ
-					t.BRET = atoi(splitstringcomma[9]);	    //  S	2	0			Брой етажи на обекта
-					t.DOPS = trim(splitstringcomma[10], trimCharQUOTE);	//  C	80	0			Вид и площ на прилежащите помещения и общите части, които са неразделна част от обекта(свободен текст)
-					t.BEG_DATE = trim(splitstringcomma[11], trimCharQUOTE);// D	10	0			Дата на регистрация
-					t.END_DATE = trim(splitstringcomma[12], trimCharQUOTE);// D	10	0			Дата на отрегистрация
+					t.IDENT = trim(splitstringcomma[0], trimCharQUOTE);   //	C	20	0	1		РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РЅР° СЃР°РјРѕСЃС‚РѕСЏС‚РµР»РµРЅ РѕР±РµРєС‚
+					t.REM = trim(splitstringcomma[1], trimCharQUOTE);     //  C	20	0			РћРїРёСЃР°РЅРёРµ РЅР° РѕР±РµРєС‚Р°
+					t.PREDN = atoi(splitstringcomma[2]); 	    //  S	3	0	2		РџСЂРµРґРЅР°Р·РЅР°С‡РµРЅРёРµ РЅР° СЃР°РјРѕСЃС‚РѕСЏС‚РµР»РµРЅ РѕР±РµРєС‚
+					t.VIDS = atoi(splitstringcomma[3]);	    //  S	2	0	2		Р’РёРґ СЃРѕР±СЃС‚РІРµРЅРѕСЃС‚
+					t.PARTIDA = trim(splitstringcomma[4], trimCharQUOTE);	//  C	20	0			РќРѕРјРµСЂ РЅР° РїР°СЂС‚РёРґР° РѕС‚ РР 
+					t.ADDRCODE = atoi(splitstringcomma[5]);	//  L	10	0	3	ADDRESS	РђРґСЂРµСЃ вЂ“ РєРѕРґ
+					t.ADDRET = trim(splitstringcomma[6], trimCharQUOTE); //  C	4	0			РђРґСЂРµСЃ вЂ“ РµС‚Р°Р¶
+					t.ADDRAP = trim(splitstringcomma[7], trimCharQUOTE);  //	C	4	0			РђРґСЂРµСЃ вЂ“ Р°РїР°СЂС‚Р°РјРµРЅС‚
+					t.PLDOC = atod(splitstringcomma[8]);	//  N	11	3			РџР»РѕС‰ РїРѕ РґРѕРєСѓРјРµРЅС‚
+					t.BRET = atoi(splitstringcomma[9]);	    //  S	2	0			Р‘СЂРѕР№ РµС‚Р°Р¶Рё РЅР° РѕР±РµРєС‚Р°
+					t.DOPS = trim(splitstringcomma[10], trimCharQUOTE);	//  C	80	0			Р’РёРґ Рё РїР»РѕС‰ РЅР° РїСЂРёР»РµР¶Р°С‰РёС‚Рµ РїРѕРјРµС‰РµРЅРёСЏ Рё РѕР±С‰РёС‚Рµ С‡Р°СЃС‚Рё, РєРѕРёС‚Рѕ СЃР° РЅРµСЂР°Р·РґРµР»РЅР° С‡Р°СЃС‚ РѕС‚ РѕР±РµРєС‚Р°(СЃРІРѕР±РѕРґРµРЅ С‚РµРєСЃС‚)
+					t.BEG_DATE = trim(splitstringcomma[11], trimCharQUOTE);// D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+					t.END_DATE = trim(splitstringcomma[12], trimCharQUOTE);// D	10	0			Р”Р°С‚Р° РЅР° РѕС‚СЂРµРіРёСЃС‚СЂР°С†РёСЏ
 
 					attrTables.tableAttributesAPARTS[t.IDENT] = t;
 				}
@@ -547,10 +547,10 @@ void populateAttributeTable(structCharArray &charArrayFromFile, structAttrTables
 				{
 					splitstringcomma = splitDataRow(myInputstring, fieldsCountMESTNOSTI);
 					structDataMESTNOSTI t;
-					t.MESTNOST = atoi(splitstringcomma[0]);	//S	4	0	3	MESTNOSTI	Код на местност
+					t.MESTNOST = atoi(splitstringcomma[0]);	//S	4	0	3	MESTNOSTI	РљРѕРґ РЅР° РјРµСЃС‚РЅРѕСЃС‚
 					t.NAME = trim(splitstringcomma[1], trimCharQUOTE);	//C	20	0			
-					t.BEG_DATE = trim(splitstringcomma[2], trimCharQUOTE);	//D	10	0			Дата на регистрация
-					t.END_DATE = trim(splitstringcomma[3], trimCharQUOTE);	//D	10	0			Дата на отрегистрация
+					t.BEG_DATE = trim(splitstringcomma[2], trimCharQUOTE);	//D	10	0			Р”Р°С‚Р° РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+					t.END_DATE = trim(splitstringcomma[3], trimCharQUOTE);	//D	10	0			Р”Р°С‚Р° РЅР° РѕС‚СЂРµРіРёСЃС‚СЂР°С†РёСЏ
 
 					attrTables.tableAttributesMESTNOSTI[t.MESTNOST] = t;
 				}
@@ -611,7 +611,7 @@ int populateNomenclatureTables(structNomenclatureTables &nomTables)
 								t.VIDS = atoi(splitstringsemicolon[0]);
 								t.VIDS_txt = trim(splitstringsemicolon[1], trimCharQUOTE);
 
-								nomTables.tableNomenclaturеsVIDS[t.VIDS] = t;
+								nomTables.tableNomenclaturesVIDS[t.VIDS] = t;
 							}
 							else if (tableName == "VIDT")
 							{
@@ -619,7 +619,7 @@ int populateNomenclatureTables(structNomenclatureTables &nomTables)
 								t.VIDT = atoi(splitstringsemicolon[0]);
 								t.VIDT_txt = trim(splitstringsemicolon[1], trimCharQUOTE);
 
-								nomTables.tableNomenclaturеsVIDT[t.VIDT] = t;
+								nomTables.tableNomenclaturesVIDT[t.VIDT] = t;
 							}
 							else if (tableName == "NTP")
 							{
@@ -627,7 +627,7 @@ int populateNomenclatureTables(structNomenclatureTables &nomTables)
 								t.NTP = atoi(splitstringsemicolon[0]);
 								t.NTP_txt = trim(splitstringsemicolon[1], trimCharQUOTE);
 
-								nomTables.tableNomenclaturеsNTP[t.NTP] = t;
+								nomTables.tableNomenclaturesNTP[t.NTP] = t;
 							}
 							else if (tableName == "VFUNC")
 							{
@@ -635,7 +635,7 @@ int populateNomenclatureTables(structNomenclatureTables &nomTables)
 								t.VFUNC = atoi(splitstringsemicolon[0]);
 								t.VFUNC_txt = trim(splitstringsemicolon[1], trimCharQUOTE);
 
-								nomTables.tableNomenclaturеsVFUNC[t.VFUNC] = t;
+								nomTables.tableNomenclaturesVFUNC[t.VFUNC] = t;
 							}
 							else if (tableName == "PREDN")
 							{
@@ -643,7 +643,7 @@ int populateNomenclatureTables(structNomenclatureTables &nomTables)
 								t.PREDN = atoi(splitstringsemicolon[0]);
 								t.PREDN_txt = trim(splitstringsemicolon[1], trimCharQUOTE);
 
-								nomTables.tableNomenclaturеsPREDN[t.PREDN] = t;
+								nomTables.tableNomenclaturesPREDN[t.PREDN] = t;
 							}
 							else if (tableName == "OGRPIMO_TYPE")
 							{
@@ -651,7 +651,7 @@ int populateNomenclatureTables(structNomenclatureTables &nomTables)
 								t.TYPE = atoi(splitstringsemicolon[0]);
 								t.TYPE_txt = trim(splitstringsemicolon[1], trimCharQUOTE);
 
-								nomTables.tableNomenclaturеsOGRPIMO_TYPE[t.TYPE] = t;
+								nomTables.tableNomenclaturesOGRPIMO_TYPE[t.TYPE] = t;
 							}
 							else if (tableName == "NADPISI")
 							{
@@ -659,7 +659,7 @@ int populateNomenclatureTables(structNomenclatureTables &nomTables)
 								t.TYPE = atoi(splitstringsemicolon[0]);
 								t.TYPE_txt = trim(splitstringsemicolon[1], trimCharQUOTE);
 
-								nomTables.tableNomenclaturеsNADPISI[t.TYPE] = t;
+								nomTables.tableNomenclaturesNADPISI[t.TYPE] = t;
 							}
 						}
 					}
