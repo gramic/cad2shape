@@ -453,8 +453,8 @@ void populateAttributeTable(structCharArray &charArrayFromFile, structAttrTables
 					t.GOD = atoi(splitstringcomma[5]);		//S	4	0			Година на построяване на сградата
 					t.PARTIDA = trim(splitstringcomma[6], trimCharQUOTE);	//C	20	0			Номер на партида от ИР
 					t.NOMER1 = trim(splitstringcomma[7], trimCharQUOTE);	//C	10	0			Стар планоснимачен номер
-					t.ЕТ = atoi(splitstringcomma[8]);	//S	3	0			Брой етажи на сградата
-					t.ЕТ1 = atoi(splitstringcomma[9]);	//S	3	0			Брой допълнителни етажи
+					t.ET = atoi(splitstringcomma[8]);	//S	3	0			Брой етажи на сградата
+					t.ET1 = atoi(splitstringcomma[9]);	//S	3	0			Брой допълнителни етажи
 					t.BRPOM = atoi(splitstringcomma[10]);	//S	3	0			Брой самостоятелни обекти
 					t.ADDRCODE = atoi(splitstringcomma[11]);	//L	10	0	3	ADDRESS	Адрес – код
 					t.LEGAL = atoi(splitstringcomma[12]);	//S	1	0			Флаг за законност : 0 - няма данни,	1 - незаконна, 2 – законна

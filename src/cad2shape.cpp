@@ -66,7 +66,7 @@ int main (int argc, char* argv[])
 	}
 
 	path p(dirName);
-	dirName += '\\';
+	dirName += boost::filesystem::path::preferred_separator;
 	std::vector<string> cadFiles;
 	try
 	{

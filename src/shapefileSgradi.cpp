@@ -25,8 +25,8 @@ vector<structFieldShape> ShapefileSgradi::initArrFieldsShapefileSGRADI()
 		{ "GOD", OGRFieldType(OFTInteger), 4, "tableAttributesSGRADI" }, 		//S	4	0			Година на построяване на сградата
 		{ "PARTIDA", OGRFieldType(OFTString), 20, "tableAttributesSGRADI" }, 	//C	20	0			Номер на партида от ИР
 		{ "NOMER1", OGRFieldType(OFTString), 10, "tableAttributesSGRADI" }, 	//C	10	0			Стар планоснимачен номер
-		{ "ЕТ", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 		//S	3	0			Брой етажи на сградата
-		{ "ЕТ1", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 		//S	3	0			Брой допълнителни етажи
+		{ "ET", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 		//S	3	0			Брой етажи на сградата
+		{ "ET1", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 		//S	3	0			Брой допълнителни етажи
 		{ "BRPOM", OGRFieldType(OFTInteger), 3, "tableAttributesSGRADI" }, 	//S	3	0			Брой самостоятелни обекти
 		{ "ADDRCODE", OGRFieldType(OFTInteger), 10, "tableAttributesSGRADI" }, 	//L	10	0	3	ADDRESS	Адрес – код
 		{ "LEGAL", OGRFieldType(OFTInteger), 1, "tableAttributesSGRADI" }, 	//S	1	0			Флаг за законност : 0 - няма данни,	1 - незаконна, 2 – законна
@@ -176,14 +176,14 @@ void ShapefileSgradi::createShapefileSGRADI()
 				const char * ch = datarowSGRADI.NOMER1.c_str();
 				poFeature->SetField(n, ch);
 			}
-			else if (f.name == "ЕТ")
+			else if (f.name == "ET")
 			{
-				int i = datarowSGRADI.ЕТ;
+				int i = datarowSGRADI.ET;
 				poFeature->SetField(n, i);
 			}
-			else if (f.name == "ЕТ1")
+			else if (f.name == "ET1")
 			{
-				int i = datarowSGRADI.ЕТ1;
+				int i = datarowSGRADI.ET1;
 				poFeature->SetField(n, i);
 			}
 			else if (f.name == "BRPOM")
